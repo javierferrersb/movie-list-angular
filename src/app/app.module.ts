@@ -12,6 +12,7 @@ import { DetailsCardComponent } from './details-card/details-card.component';
 import { DetailsRowComponent } from './details-row/details-row.component';
 import { MovieCardListSkeletonComponent } from './movie-card-list-skeleton/movie-card-list-skeleton.component';
 import { MovieCardSkeletonComponent } from './movie-card-skeleton/movie-card-skeleton.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,13 @@ import { MovieCardSkeletonComponent } from './movie-card-skeleton/movie-card-ske
     MovieCardListSkeletonComponent,
     MovieCardSkeletonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [APIServiceService],
   bootstrap: [AppComponent],
 })
