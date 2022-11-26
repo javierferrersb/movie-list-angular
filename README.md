@@ -1,27 +1,60 @@
-# MovieListAngular
+# Movie List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+## Built with
 
-## Development server
+- Angular
+- Typescript
+- TailwindCSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Search movies
+- View movie details
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting started
 
-## Build
+To get a local copy up and running follow these simple steps.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- Git
+- NodeJS
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```sh
+    git clone https://github.com/javierferrersb/movie-list-angular.git
+    ```
 
-## Further help
+2. Install NPM packages
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```sh
+   npm install
+   ```
+
+3. Run the app
+
+    ```sh
+    ng serve
+    ```
+
+4. Open [http://localhost:4200](http://localhost:4200) with your browser to see the result.
+
+## Author
+
+👤 **Javier Ferrer Sánchez-Barcaiztegui**
+
+- Github: [@javierferrersb](<https://github.com/javierferrersb>)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [Angular](<https://angular.io/>)
+- [Open Movie Database](https://www.omdbapi.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
