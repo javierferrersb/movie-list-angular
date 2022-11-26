@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-details-card',
   templateUrl: './details-card.component.html',
-  styleUrls: ['./details-card.component.css']
+  styleUrls: ['./details-card.component.css'],
 })
 export class DetailsCardComponent implements OnInit {
+  @Input() rows!: {
+    title: string;
+    value: string;
+  }[];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

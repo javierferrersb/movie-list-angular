@@ -9,10 +9,12 @@ import { MovieCardListComponent } from './movie-card-list/movie-card-list.compon
 import { APIServiceService } from './apiservice.service';
 import { SearchAreaComponent } from './search-area/search-area.component';
 import { DetailsCardComponent } from './details-card/details-card.component';
-import { DetailsRowComponent } from './details-row/details-row.component';
 import { MovieCardListSkeletonComponent } from './movie-card-list-skeleton/movie-card-list-skeleton.component';
 import { MovieCardSkeletonComponent } from './movie-card-skeleton/movie-card-skeleton.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailScreenComponent } from './detail-screen/detail-screen.component';
+import { DetailRowComponent } from './detail-row/detail-row.component';
+import { HomeScreenComponent } from './home-screen/home-screen.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MovieCardListComponent,
     SearchAreaComponent,
     DetailsCardComponent,
-    DetailsRowComponent,
     MovieCardListSkeletonComponent,
     MovieCardSkeletonComponent,
+    DetailScreenComponent,
+    DetailRowComponent,
+    HomeScreenComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,5 +39,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   providers: [APIServiceService],
   bootstrap: [AppComponent],
+  exports: [HomeScreenComponent, DetailScreenComponent, AppRoutingModule],
 })
 export class AppModule {}

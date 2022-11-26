@@ -1,1 +1,15 @@
-<p>details-card works!</p>
+<div>
+  <table
+    class="ml-5 mr-5 mb-7 table-auto border-collapse rounded-xl bg-white shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
+  >
+    <tbody>
+      <tr
+        class="border-b align-top last:border-none dark:border-slate-400"
+        *ngFor="let row of rows"
+      >
+        <td class="px-4 py-2 font-bold">{{ row.title }}</td>
+        <td class="px-4 py-2">{{ row.value }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
