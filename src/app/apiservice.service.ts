@@ -22,7 +22,9 @@ export class APIServiceService {
 
   constructor(private http: HttpClient) {}
 
-  GetBySearch(parameters: GetBySearchParams): Observable<GetBySearchResponse> {
+  GetBySearch = (
+    parameters: GetBySearchParams
+  ): Observable<GetBySearchResponse> => {
     const params = {
       apikey: environment.OMDB_API_KEY,
       ...parameters,
@@ -31,7 +33,7 @@ export class APIServiceService {
     return this.http.get<GetBySearchResponse>(this.OMD_WEBSITE, {
       params: params,
     });
-  }
+  };
 
   GetByImdbID(parameters: GetByImdbIDParams): Observable<GetByImdbIDResponse> {
     const params = {

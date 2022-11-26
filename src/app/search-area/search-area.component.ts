@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-search-area',
@@ -9,15 +9,14 @@ import { FormBuilder } from '@angular/forms';
 export class SearchAreaComponent implements OnInit {
   @Input() searchMovies!: (searchQuery: string) => void;
 
-  searchForm = this.formBuilder.group({
-    searchText: '',
+  searchForm = new FormGroup({
+    searchQuery: new FormControl(''),
   });
 
-  onSubmit(event: Event): void {
-    event.preventDefault();
-    this.searchMovies(this.searchForm.value.searchText || '');
+  onSubmit() {
+    this.searchMovies(this.searchForm.controls.searchQuery.value || '');
   }
-  constructor(private formBuilder: FormBuilder) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

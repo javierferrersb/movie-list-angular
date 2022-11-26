@@ -10,10 +10,8 @@ export class MovieCardComponent implements OnInit {
   @Input() posterPath!: string;
   @Input() id!: string;
   @Input() year!: string;
-
+  showPoster: boolean = true;
   constructor() {}
-
-  showPoster: boolean = this.posterPath !== 'N/A';
 
   ngOnInit(): void {}
 }

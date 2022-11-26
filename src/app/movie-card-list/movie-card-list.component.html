@@ -1,1 +1,12 @@
-<p>movie-card-list works!</p>
+<div
+  class="ml-3 mr-3 grid grid-cols-1 pb-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
+>
+  <app-movie-card
+    *ngFor="let movie of movies"
+    [routerLink]="['/movie', movie.imdbID]"
+    [title]="movie.Title"
+    [posterPath]="movie.Poster"
+    [year]="movie.Year"
+    [id]="movie.imdbID"
+  ></app-movie-card>
+</div>

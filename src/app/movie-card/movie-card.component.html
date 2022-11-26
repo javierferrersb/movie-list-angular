@@ -5,7 +5,7 @@
     src="{{ posterPath }}"
     alt="{{ title }}"
     class="h-full w-36 rounded-l-xl object-fill group-hover:brightness-110"
-    *ngIf="showPoster"
+    *ngIf="posterPath !== 'N/A'"
   />
 
   <div class="ml-1 flex-row p-2 md:ml-5">
